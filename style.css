@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Kanit&family=Lato&family=Montserrat:wght@300&display=swap');
+
+*{
+    caret-color: transparent;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    background-color: rgb(30, 30, 30);
+}
+
+.container{
+    background-color: hsla(0, 0%, 20%, 0.812);
+    height: 35.7em;
+    width: 36.2em;
+    margin: auto;
+    display: grid;
+    box-shadow: .1em .2em 2em .1em;
+}
+
+.numberColumn {
+    height: 35.2em;
+    width: 36.2em;
+    display: grid;
+}
+
+.letterRow {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    margin-top: -1em;
+    margin-inline-start: -.4em;
+}
+
+.xLetters {
+    padding: -0.2em;
+    padding-top: -.3em;
+    margin-block-start: -.4em;
+    margin-right: -1em;
+    font-size: 1.2em;
+    color: rgb(100, 100, 100);
+}
+
+.yNumbers {
+    padding: .5em;
+    padding-top: 0em;
+    margin-block-end: -0.8em;
+    margin-block-start: -.4em;
+    font-size: 1.2em;
+    color: rgb(100, 100, 100);
+}
+
+.opposite {
+    background-color: #88622c !important;
+}
+
+.opposite:hover {
+    background-color: #785627 !important;
+}
+
+.opposite:active{
+    background-color: #88622c !important;
+}
+
+.board > button {
+    border: none;
+    background-color: #e0af6f;
+}
+
+.board > button:hover {
+    background-color: #c0965f;
+}
+
+.board > button:active{
+    background-color: #e0af6f;
+}
+
+.board{
+    display: grid;
+    height: 32.5em;
+    width: 32.2em;
+    margin: auto;
+    position: absolute;
+    top: .25em;
+    grid-template-columns: repeat(8, 4em);
+    grid-template-rows: repeat(8, 4em);
+    padding: 2em;
+}
+
+.piece {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.bishop {
+    width: 64% !important;
+    height: 85% !important;
+}
+
+.rook {
+    height: 89% !important;
+}
+
+.queen {
+    width: 100% !important;
+}
+
+.king {
+    width: 89% !important;
+}
+
+.pawn {
+    width: 58% !important;
+    height: auto !important;
+}
+
+.knight {
+    height: 83% !important;
+}
